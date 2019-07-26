@@ -1,9 +1,10 @@
 import sys
+from player import Player
 from unit import Unit
 from board import Board
 from potion import Potion
 
-hero = Unit("Hero")
+hero = Player("Hero")
 board = Board()
 
 def main():
@@ -31,6 +32,7 @@ def loop():
             sys.exit()
         else:
             print("No recognizable command entered")
+
 
 def say(words):
     print(f"{hero.name} says: '{words}'")

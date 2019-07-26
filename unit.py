@@ -26,8 +26,4 @@ class Unit:
                 self.hp = self.max_hp
         else:
             print(f"Unit {self.name} is already dead")
-
-    def loot_item(self, item):
-        if not self.inventory.add_to(item):
-            print(f"{item.name} not looted")
         
