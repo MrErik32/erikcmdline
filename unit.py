@@ -1,8 +1,8 @@
-from inventory import Inventory
+from point import Point
 
 class Unit:
     #Class variables
-    inventory = Inventory()
+    location = None
     status = "Alive"
 
     def __init__(self, name="New Unit", hp=100):
@@ -26,4 +26,6 @@ class Unit:
                 self.hp = self.max_hp
         else:
             print(f"Unit {self.name} is already dead")
-        
+    
+    def set_location(self, x, y):
+            self.location = Point(x, y)

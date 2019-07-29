@@ -19,3 +19,7 @@ class Inventory:
         else:
             print("Item doesn't exist")
             return False
+
+    def list_inventory(self):
+        for item in self.inventory:
+            print(item.name)

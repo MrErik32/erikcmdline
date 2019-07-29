@@ -1,10 +1,18 @@
-qinput = [1, 2, 0]
+def cons(a, b):
+    def pair(f):
+        return f(a, b)
+    return pair
 
-qinput.sort()
-for i in range(qinput[0], len(qinput)*2):
-    if i <= 0:
-        pass
-    else:
-        if i not in qinput:
-            print(i)
-            break
+def car(pair):
+    def first_num(a, b):
+        return a
+    return pair(first_num)
+
+def cdr(pair):
+    def last_num(a, b):
+        return b
+    return pair(last_num)
+
+
+
+print(cdr(cons(3, 4)))

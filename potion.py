@@ -1,5 +1,5 @@
-
-class Potion:
+from item import Item
+class Potion(Item):
     def __init__(self, size="Small", stack_size=1):
         self.name = f"{size} Potion"
         if size == "Small":
