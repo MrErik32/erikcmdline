@@ -1,4 +1,4 @@
-class Inventory:
+class Inventory(object):
     #Class Variables
     inventory = []
 

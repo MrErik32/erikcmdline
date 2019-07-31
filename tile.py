@@ -1,4 +1,4 @@
-class Tile:
+class Tile(object):
     def __init__(self, point, occupied=False, occupant=None):
         self.position = point
         self.occupied = occupied

@@ -2,7 +2,7 @@ from tile import Tile
 from point import Point
 from player import Player
 
-class Board:
+class Board(object):
 
     board = []
   

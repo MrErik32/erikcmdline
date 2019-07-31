@@ -1,6 +1,6 @@
 from point import Point
 
-class Unit:
+class Unit(object):
     #Class variables
     location = None
     status = "Alive"
